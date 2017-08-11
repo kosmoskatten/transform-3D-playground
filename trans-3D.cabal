@@ -17,6 +17,7 @@ executable trans-3D
   hs-source-dirs:      src
   main-is:             Main.hs
   other-modules:       Forward
+                       Backward
                        Mat
                        Normal
   default-language:    Haskell2010

@@ -5,6 +5,7 @@ module Mat
     , makeRotate
     , normalMatrix
     , identity
+    , inv44
     ) where
 
 import           Linear.Matrix     (M44, fromQuaternion, identity, inv44,
