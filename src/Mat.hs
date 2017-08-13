@@ -1,5 +1,6 @@
 module Mat
     ( M44
+    , V3 (..)
     , makePerspective
     , makeView
     , makeRotate
@@ -22,7 +23,7 @@ makePerspective =
 -- | Construct a view matrix.
 makeView :: M44 Float
 makeView =
-    Proj.lookAt (V3 0 0 10) (V3 0 0 0) (V3 0 1 0)
+    Proj.lookAt (V3 0 0 20) (V3 0 0 0) (V3 0 1 0)
 
 makeRotate :: V3 Float -> Float -> M44 Float
 makeRotate v = m33_to_m44 . fromQuaternion . axisAngle v
